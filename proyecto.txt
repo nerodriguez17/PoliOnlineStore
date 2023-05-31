@@ -1,0 +1,10 @@
+Dockerfile
+docker-compose.yml
+docker compose up -d
+
+
+volumes:
+   - ./html:/usr/share/nginx/html/
+
+volumes:
+ html:{}

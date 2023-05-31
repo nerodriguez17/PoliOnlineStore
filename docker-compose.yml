@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+ nginx:
+  build: 
+   context: ./
+   dockerfile: Dockerfile
+  container_name: nginx-server
+  restart: always
+  ports:
+   - 8080:80
+  
+  volumes:
+   - ./proyecto-ic:/usr/share/nginx/html/
+
+volumes: {}
+
+
